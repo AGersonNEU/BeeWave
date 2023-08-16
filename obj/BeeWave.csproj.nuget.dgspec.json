@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\agerson\\OneDrive\\Second Year\\IntroToDynamicWebProgramming\\Final (Social Site)\\BeeWave\\BeeWave.csproj": {}
+    "C:\\Users\\agerson\\source\\repos\\BeeWave\\BeeWave\\BeeWave.csproj": {}
   },
   "projects": {
-    "C:\\Users\\agerson\\OneDrive\\Second Year\\IntroToDynamicWebProgramming\\Final (Social Site)\\BeeWave\\BeeWave.csproj": {
+    "C:\\Users\\agerson\\source\\repos\\BeeWave\\BeeWave\\BeeWave.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agerson\\OneDrive\\Second Year\\IntroToDynamicWebProgramming\\Final (Social Site)\\BeeWave\\BeeWave.csproj",
+        "projectUniqueName": "C:\\Users\\agerson\\source\\repos\\BeeWave\\BeeWave\\BeeWave.csproj",
         "projectName": "BeeWave",
-        "projectPath": "C:\\Users\\agerson\\OneDrive\\Second Year\\IntroToDynamicWebProgramming\\Final (Social Site)\\BeeWave\\BeeWave.csproj",
+        "projectPath": "C:\\Users\\agerson\\source\\repos\\BeeWave\\BeeWave\\BeeWave.csproj",
         "packagesPath": "C:\\Users\\agerson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agerson\\OneDrive\\Second Year\\IntroToDynamicWebProgramming\\Final (Social Site)\\BeeWave\\obj\\",
+        "outputPath": "C:\\Users\\agerson\\source\\repos\\BeeWave\\BeeWave\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
