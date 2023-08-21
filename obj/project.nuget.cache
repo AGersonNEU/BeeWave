@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HktUvLsALrYkgowzLrFoYM/HiSooGXA9SJNFWxs7/MWnA5AA6UKSrl07mmeMJqNs2qHmqmAP03Etg5vnj9EG2g==",
+  "dgSpecHash": "4wolx2IO2FSQhiliU/KakdYA+MjKeD7UfU9rNxeb7JwI69WuwVsgS74/o5i5q2bxcSdT3UgDMnCkTvmrJ3lA7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\agerson\\OneDrive\\Second Year\\IntroToDynamicWebProgramming\\Final (Social Site)\\BeeWave\\BeeWave.csproj",
+  "projectFilePath": "C:\\Users\\agerson\\source\\repos\\BeeWave\\BeeWave\\BeeWave.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\agerson\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\agerson\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.16\\microsoft.aspnetcore.cryptography.internal.6.0.16.nupkg.sha512",
