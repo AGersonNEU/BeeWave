@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using BeeWave.Models;
 
 namespace BeeWave.Data
 {
@@ -10,6 +11,6 @@ namespace BeeWave.Data
 
         }
 
-
+        public DbSet<Profile> Profiles { get; set; }
     }
 }

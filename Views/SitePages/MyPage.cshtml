@@ -10,3 +10,33 @@ leave messages on own page*@
 
 @*need a leave message button*@
 
+@if(Model == null){
+    <h2>Looks like you don't have an account with us yet :(</h2>
+
+}
+else
+{
+    //users profile page
+    <div>
+        Successfully logged in! Welcome @Model.Name
+    </div>
+    <span>
+        <label>Name: </label>
+        <h3>@Model.Name</h3>
+    </span>
+    <span>
+        <label>Year: </label>
+        <h3>@Model.Age</h3>
+    </span>
+    <span>
+        <label>Platform: </label>
+        <h3>@Model.Likes</h3>
+    </span>
+
+    <div>
+        <a asp-controller="Profile" asp-action="EditProfile" asp-route-id="@Model.ProfileID" class="btn btn-primary mx2">
+          Edit Profile
+        </a>
+    </div>
+}
+

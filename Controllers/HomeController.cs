@@ -1,4 +1,5 @@
-﻿using BeeWave.Models;
+﻿using BeeWave.Interfaces;
+using BeeWave.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,11 +7,11 @@ namespace BeeWave.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+       
+        IDataAccessLayer dal;
+        public HomeController(IDataAccessLayer indal)
         {
-            _logger = logger;
+            dal = indal;
         }
 
         public IActionResult Index()

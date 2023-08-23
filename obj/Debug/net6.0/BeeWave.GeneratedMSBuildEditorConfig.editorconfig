@@ -40,8 +40,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/agerson/source/repos/BeeWave/BeeWave/Views/SitePages/CreateProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l0ZVBhZ2VzXENyZWF0ZVByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/agerson/source/repos/BeeWave/BeeWave/Views/SitePages/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l0ZVBhZ2VzXEVkaXRQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/agerson/source/repos/BeeWave/BeeWave/Views/SitePages/MyPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l0ZVBhZ2VzXE15UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/agerson/source/repos/BeeWave/BeeWave/Views/SitePages/OthersPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l0ZVBhZ2VzXE90aGVyc1BhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/agerson/source/repos/BeeWave/BeeWave/Views/_ViewImports.cshtml]

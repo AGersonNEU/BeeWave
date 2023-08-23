@@ -1,15 +1,26 @@
-﻿namespace BeeWave.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BeeWave.Models
 {
     public class Profile
     {
+        [Key]
+        public int ProfileID { get; set; }
+
+        [Required]
         public int UserID { get; set; }
 
-        public string Image { get; set; }
+        public string? Image { get; set; }
+
+        [Required]
         public string Name { get; set; }
 
         public int? Age { get; set; }
 
         public string? Likes { get; set; }
+
+        [Required]
+        public string Password { get; set; }
 
         public Profile() { }
 

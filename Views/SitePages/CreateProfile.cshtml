@@ -1,0 +1,35 @@
+﻿@model Profile
+
+<form method="post">
+        <div class="row pb-2">
+        <h2 class="text-warning">Create Profile</h2>
+        <hr />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" placeholder="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" placeholder="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Age"></label>
+        <input asp-for="Age" type="number" class="form-control" />
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Likes"></label>
+        <input asp-for="Likes" placeholder="Likes" class="form-control" />
+        <span asp-validation-for="Likes" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Image"></label>
+        <input asp-for="Image" placeholder="Image" class="form-control" />
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+
+</form>
