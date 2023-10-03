@@ -1,0 +1,16 @@
+﻿@model Profile
+<div>
+    @if (Model == null)
+    {
+        <h2>no Profiles were found</h2>
+    }
+    else
+    {
+
+        <form asp-action="OthersPage" asp-route-name="name" class="btn btn-outline-secondary" asp-controller="Profile" method="get">
+            <input name="name" value="@Model.Name" hidden />
+            <img src="@Model.Image" alt="no image found" height="50" width="50"/>
+            <button type="submit" class="btn btn-success">@Model.Name</button>
+        </form>
+    }
+</div>

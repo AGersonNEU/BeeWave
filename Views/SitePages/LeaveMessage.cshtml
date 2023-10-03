@@ -1,0 +1,18 @@
+﻿@model Message
+
+<form asp-action="LeaveMessage" asp-controller="Profile" method="post">
+    <input asp-for="PosterName" value="@ViewBag.PosterName" hidden/>
+    <input type="number" asp-for="PosterId" value="1" hidden/>
+    <input asp-for="PageId" value="@ViewBag.PageId" hidden/>
+
+    <h1 class="text-center">Leave A Message</h1>
+    <textarea class="form-control" asp-for="MessageContent">
+
+    </textarea>
+    <br/>
+    <button type="submit" class="btn btn-success">Send</button>
+
+    <a asp-controller="Profile" asp-action="OthersPage" asp-route-name="@ViewBag.PosterName" class="btn btn-light">
+        Cancel
+    </a>
+</form>

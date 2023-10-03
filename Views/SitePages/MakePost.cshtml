@@ -1,0 +1,14 @@
+﻿@model Post
+
+<form method="post" asp-controller="Profile">
+    <input asp-for="PosterId" value="@ViewBag.PosterId" hidden/>
+    <input asp-for="PosterName" value="@ViewBag.PosterName" hidden/>
+    <input asp-for="PageId" value="@ViewBag.PageId" hidden/>
+    
+    <input asp-for="PostImage" />
+    <br/>
+    <button type="submit" class="btn btn-success">Make Post</button>
+    <a asp-controller="Profile" asp-action="MyPage" class="btn btn-light">
+        Cancel
+    </a>
+</form>

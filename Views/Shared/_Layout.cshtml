@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav  class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-yellow box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-yellow box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <img src="../images/BeeWaveLogo2.png" width="60" height="50" />
@@ -27,7 +27,31 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutMe">About Me!</a>
                         </li>
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+
+                            @*need to be authorized*@
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Profile" asp-action="CreateProfile">CreateProfile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Profile" asp-action="MyPage">MyPage</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Profile" asp-action="WaveFeed">Wave Feed</a>
+                            </li>
+
+                        }
                     </ul>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <form class="d-flex" asp-action="SearchResults" asp-route-name="name" asp-controller="Profile">
+                            <input name="name" class="form-control me-sm-2" type="search" placeholder="Search">
+                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+
+                    }
                     <partial name="_LoginPartial" />
                 </div>
             </div>
@@ -39,11 +63,11 @@
         </main>
     </div>
 
-    <footer class="beewaveFooter">
-        <div class="container">
-            &copy; 2023 - BeeWave - <a class="beewaveLink" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    @*<footer class="beewaveFooter">
+    <div class="container">
+    &copy; 2023 - BeeWave - <a class="beewaveLink" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+    </footer>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

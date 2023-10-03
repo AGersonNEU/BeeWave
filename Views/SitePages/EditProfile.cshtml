@@ -1,0 +1,44 @@
+﻿@model Profile
+
+<form method="post" asp-action="EditProfile" asp-controller="Profile">
+    <h1 class="text-warning">Edit Profile</h1>
+
+    <input asp-for="ProfileID" value="@Model.ProfileID" hidden/>
+
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" placeholder="@Model.Name" class="form-control" />
+    </div> 
+    
+    <div class="mb-3">
+        <label asp-for="Image"></label>
+        <input asp-for="Image" placeholder="@Model.Image" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" placeholder="@Model.Password" class="form-control" />
+    </div>
+    
+    <div class="mb-3">
+        <label asp-for="Age"></label>
+        <input asp-for="Age" placeholder="@Model.Age" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Likes"></label>
+        <input asp-for="Likes" placeholder="@Model.Likes" class="form-control" />
+    </div>
+    
+    <div class="mb-3">
+        <label asp-for="Dislikes"></label>
+        <input asp-for="Dislikes" placeholder="@Model.Dislikes" class="form-control" />
+    </div>
+
+
+    <button type="submit" class="btn btn-dark">Update</button>
+
+    <a asp-controller="Profile" asp-action="MyPage" class="btn btn-light">
+        Back To Page
+    </a>
+</form>

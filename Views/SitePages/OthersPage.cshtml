@@ -1,0 +1,97 @@
+﻿@model OneProfileAndPostsAndMessages
+
+@if (Model == null)
+{
+    <h2 class="text-warning">Looks like you don't have an account with us yet :(</h2>
+    @*put a button to sign in or register??*@
+}
+else
+{
+
+    @*right profile info tag*@
+    <div class="beewaveFloatDiv">
+        <div>
+            <div class="profileDiv">
+                @*image tag*@
+                <h3 class="text-center">
+                    @Model.PageProfile.Name
+
+                </h3>
+                <img height="200" width="200" src="@Model.PageProfile.Image" alt="no image found" />
+            </div>
+
+            <br />
+            <div class="profileDiv">
+                <span>
+                    <label>Age: </label>
+                    <h3>@Model.PageProfile.Age</h3>
+                </span>
+                <span>
+                    <label>Likes: </label>
+                    <h3>@Model.PageProfile.Likes</h3>
+                </span>
+                <span>
+                    <label>Dislikes: </label>
+                    <h3>@Model.PageProfile.Dislikes</h3>
+                </span>
+            </div>
+            <br />
+        </div>
+    </div>
+
+    @*tag for posts*@
+    <div class="beewaveFloatDiv">
+        <h1 class="text-warning">@Model.PageProfile.Name's Feed</h1>
+
+        @if (Model.Posts.Count() == 0 || Model.Posts == null)
+        {
+            <h3 class="text-center">There are no posts on this page yet</h3>
+        }
+        else
+        {
+            @*include a partial view with all the posts (foreach)*@
+            @*post == message for the site*@
+            foreach (Post post in Model.Posts)
+            {
+                @*partial view*@
+                <div class="profileDiv">
+                    <partial name="_PostPartialView.cshtml" for="@post" />
+                </div>
+            }
+        }
+    </div>
+
+    @*messages on page*@
+    <div style="float: inline-end">
+        <div class="messagesTitleFormat">
+            <div>
+                @*need to make a posterID in the view bag*@
+                <a asp-controller="Profile" asp-action="LeaveMessage" asp-route-id="@Model.PageProfile.ProfileID" class="btn btn-success">
+                    Leave Message
+                </a>
+                <h1 class="text-warning">
+                    Messages
+                </h1>
+
+            </div>
+        </div>
+
+        @if (Model.Messages == null || Model.Messages.Count() == 0)
+        {
+            <h3>There is no messages on this page yet</h3>
+        }
+        else
+        {
+            foreach (Message message in Model.Messages)
+            {
+                @*partial view*@
+                <div>
+                    <partial name="_MessagePartialView.cshtml" for="@message" />
+                </div>
+            }
+        }
+
+    </div>
+
+
+}

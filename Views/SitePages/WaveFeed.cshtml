@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Post>
+
+@if (Model == null)
+{
+    <h1>unable to load any posts</h1>
+}
+else
+{
+    foreach(Post post in Model)
+    {
+        <div>
+            <partial name="_PostPartialView.cshtml" for="@post"/>
+        </div>
+    }
+}

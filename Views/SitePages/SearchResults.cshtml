@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Profile>
+
+@if (Model == null)
+{
+    <h2>No matches found</h2>
+}
+else
+{
+   
+    foreach (Profile profile in Model)
+    {
+        <br/>
+        <div class="profileDiv">
+            <partial name="_ProfileSearchPartialView.cshtml" for="@profile" />
+        </div>
+        <br />
+
+    }
+
+}
